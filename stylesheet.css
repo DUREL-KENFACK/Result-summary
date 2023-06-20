@@ -1,0 +1,128 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-size: 18px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+}
+.main {
+    box-shadow: 3px 5px 5px 1px hsl(253, 32%, 89%);
+    background-color: hsl(0, 0%, 100%);
+    min-height: 50vh;
+    max-width: 80vh;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.main > div{
+    flex: 50%;
+}
+.result {
+    color:hsl(241, 100%, 89%) ;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+}
+.result>span{padding: 15px;}
+.summary {
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.reaction {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    height: 30px;
+    width:  100%;
+    border-radius: 5px;
+    align-items:center;
+    margin-top:10px;
+}
+.align{
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+}
+.box1 {
+    margin-top: 20px;
+    color: hsl(0, 100%, 67%);
+    background-color:hsla(0, 100%, 67%, 0.105) ;
+    
+}
+.box2 {
+    border-radius: 5px;
+    background-color:hsla(39, 98%, 58%, 0.100) ;
+    color: hsl(39, 100%, 56%);
+}
+.box3 {
+    color: hsl(166, 100%, 37%) ;
+    background-color: hsla(166, 100%, 37%, 0.048);
+}
+.box4 {
+    background-color: hsla(234, 85%, 45%, 0.064);
+    color:hsl(234, 85%, 45%) ;
+    margin-bottom: 10px;
+}
+.Great{
+    color: white;
+    font-size: 25px;
+}
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+}
+.number {
+    color:white ;
+    font-size: 62px;
+    font-weight:20px;
+}
+button {
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    background-color:hsl(224, 30%, 27%) ;
+    border-radius: 30px;
+    font-size: x-small;
+}
+.note{
+    color:hsl(224, 30%, 27%) ;
+}
+button:hover{
+    transform: matrix();
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  } 
+  @media only screen and (max-width : 400px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        max-width: 40vh;
+    }
+  }
